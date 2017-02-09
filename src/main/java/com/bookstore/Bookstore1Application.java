@@ -21,13 +21,13 @@ public class Bookstore1Application {
 	}
 
 	@Bean
-	public CommandLineRunner studentDemo(BookRepository repository) {
+	public CommandLineRunner bookDemo(BookRepository repository) {
 		return (args) -> {
-			log.info("save a couple of students");
+			log.info("save a couple of books");
 			repository.save(new Book("Title of a Book","Author Authorius", 2017, "123456-6543", 55.40));
 			repository.save(new Book("Title of an other Book","Authorius Authorius", 2017, "189456-657843", 30.00));	
 
-			log.info("fetch all students");
+			log.info("fetch all books");
 			for (Book book : repository.findAll()) {
 				log.info(book.toString());
 			}

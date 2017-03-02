@@ -19,19 +19,19 @@ public class Book {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	@Column(name="title")
+//	@Column(name="title")
 	private String title;
 
-	@Column(name="author")
+//	@Column(name="author")
 	private String author;
 
-	@Column(name="year")
+//	@Column(name="year")
 	private int year;
 
-	@Column(name="isbn")
+//	@Column(name="isbn")
 	private String isbn;
 
-	@Column(name="price")
+//	@Column(name="price")
 	private Double price;
 
 	public Book() {

@@ -12,7 +12,7 @@ import com.bookstore.model.Book;
 import com.bookstore.model.BookRepository;
 
 @Controller
-@ResponseBody
+//@ResponseBody
 public class BookController {
 
 	@Autowired
